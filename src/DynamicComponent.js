@@ -1,9 +1,9 @@
 import React from 'react';
-import valo from './image.png';
+import valoImage from './image.png';
+
 const DynamicContentComponent = () => {
   const dynamicArray = ["Hi", "Kiran", "Kiran", "Is this ", "Dynamic"];
-  const imageUrl = process.env.PUBLIC_URL + 'valo.png';
-
+  
   return (
     <div>
       <h2>Dynamic Array Probably:</h2>
@@ -11,8 +11,8 @@ const DynamicContentComponent = () => {
         <p key={index}>{item}</p>
       ))}
 
-      <h2>Valorant dont play</h2>
-      <img src={valo} alt="valo" />
+      <h2>Valorant don't play</h2>
+      <img src={valoImage} alt="Valorant" />
     </div>
   );
 };
